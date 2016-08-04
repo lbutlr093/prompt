@@ -1,0 +1,14 @@
+function prompt
+{
+    local WHITE="\[\033[1;37m\]"
+    local GREEN="\[\033[0;32m\]"
+    local CYAN="\[\033[0;36m\]"
+    local RED="\[\033[0;31m\]"
+    local GRAY="\[\033[0;37m\]"
+    local BLUE="\[\033[0;33m\]"
+    local NORMAL="\[\033[m\]"
+    export PS1="
+${GREEN}[\u ${BLUE}+$SHLVL${GREEN}]${CYAN} \d (${BLUE}\A${CYAN}) ${RED}\w${GRAY}
+$ ${NORMAL}"
+}
+prompt
